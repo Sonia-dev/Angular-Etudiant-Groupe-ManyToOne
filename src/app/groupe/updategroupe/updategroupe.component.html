@@ -1,0 +1,23 @@
+<app-acceuil></app-acceuil>
+
+
+<div class="card car">
+    <h3>Modifier Groupe </h3>
+<form (ngSubmit)="onsubmit()" #f=ngForm> 
+ 
+     
+<div class="form-group"> 
+    <label >Nom:</label> 
+    <input name="nom" type="text" class="form-control"  [(ngModel)]="groupe.nom"  >
+</div>
+   
+
+
+
+                      <button class="btn btn-warning" type="submit">Update</button> 
+          </form>
+
+        </div>
+
+
+  

@@ -1,0 +1,23 @@
+<app-acceuil></app-acceuil>
+<div class="col-md-6 offset-md-3">
+
+    <h3 class="titre">Create Groupe</h3>
+    <form (ngSubmit)="onSubmit()">
+
+      
+   
+ 
+        
+    <div class="form-group">
+    <label>nom</label>
+    <input type="text" id="nom" class="form-control"
+    [(ngModel)] ="gr.nom" name="nom" required>
+</div>
+
+
+    <button class="btn btn-success" type="submit">Add </button>
+    
+    </form>
+    
+    </div>
+

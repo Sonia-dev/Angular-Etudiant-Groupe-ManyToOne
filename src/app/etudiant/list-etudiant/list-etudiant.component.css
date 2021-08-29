@@ -1,0 +1,28 @@
+
+.titre{
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    padding-left: 400px;
+    color: gray;
+   
+}
+
+
+
+
+.table td{
+  
+    border: 2px solid gray;
+    vertical-align: middle;
+}
+.table th{
+    border: 2px solid gray;
+    vertical-align: middle;
+   
+}
+.table tr{
+    border: 2px solid gray;
+    
+    vertical-align: middle;
+}

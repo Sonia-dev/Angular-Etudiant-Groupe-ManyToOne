@@ -1,0 +1,76 @@
+<app-acceuil></app-acceuil>
+
+
+<div class="col-md-6 offset-md-3">
+    <h3 class="titre">Create etudiant</h3>
+    <form [formGroup]="etudiantForm" (ngSubmit)="onSubmit()" >
+
+        <div class="form-group">
+            <label for="nom">matricule</label>
+            <input
+              type="text"
+              id="matricule"
+              class="form-control"
+              formControlName="matricule" 
+              [ngClass]="{'is-invalid':
+              etudiantForm.get('matricule').touched && !etudiantForm.get('matricule').valid}"
+            />
+    
+    </div >
+
+
+      <div class="form-group">
+        <label for="nom">nom</label>
+        <input
+          type="text"
+          id="nom"
+          class="form-control"
+          formControlName="nom" 
+          [ngClass]="{'is-invalid':
+          etudiantForm.get('nom').touched && !etudiantForm.get('nom').valid}"
+
+        />
+
+</div >
+
+      <div class="form-group">
+        <label>prenom</label>
+        <input
+          type="text"
+          id="prenom"
+          class="form-control"
+          formControlName="prenom"
+          [ngClass]="{'is-invalid':
+          etudiantForm.get('prenom').touched && !etudiantForm.get('prenom').valid}"
+        
+        />
+      </div>
+      <div class="form-group">
+        <label>Date de naissance</label>
+        <input
+          type="date"
+          id="date_naissance"
+          class="form-control"
+          formControlName="date_naissance"
+          [ngClass]="{'is-invalid':
+          etudiantForm.get('date_naissance').touched && !etudiantForm.get('date_naissance').valid}"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputEmail1">Groupe</label>
+  
+        <select class="form-control" (change)="onSelectFile($event)" formControlName="groupe" 
+        >  
+          <option *ngFor="let gr of groupe" value="{{ gr.id }}">
+            {{ gr.nom }}
+          </option>
+        </select>
+      </div>
+
+      <button  class="btn btn-success"   type="submit" [disabled]=!etudiantForm.valid>
+        Add 
+      </button>
+    </form>
+  </div>
+  

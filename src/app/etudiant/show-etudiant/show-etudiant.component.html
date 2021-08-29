@@ -1,0 +1,23 @@
+<app-acceuil></app-acceuil>
+<h3>Fiche etudiant : {{etudiant.nom}} {{etudiant.prenom}}</h3>
+<div class="show">
+
+    
+    <div>
+<label><b>Matricule  :  </b></label>{{etudiant.matricule}}
+    </div>
+    <div>
+        <label><b>Nom  : </b></label>{{etudiant.nom}}
+            </div>
+            <div>
+                <label><b>Prenom  : </b></label>{{etudiant.prenom}}
+                    </div>
+                    <div>
+                        <label><b>Date de naissance  : </b></label>{{etudiant.date_naissance}}
+                            </div>
+                           
+
+
+</div>
+
+<button (click)="back()"><i class="fas fa-angle-double-left"></i> Retour </button>

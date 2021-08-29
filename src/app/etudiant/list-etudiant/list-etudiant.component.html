@@ -1,0 +1,42 @@
+<div>
+<app-acceuil></app-acceuil>
+
+
+<div class="panel-header panel-header-sm">
+<form>
+   
+    <h2 class="titre">Liste des etudiants </h2>
+    
+    
+    
+    
+    <table class="table">
+    <thead> 
+    <tr>
+    
+        <th> Matricule</th>
+        <th> Nom</th>
+        <th>Prenom</th>
+        <th>date_naissance</th>
+       
+        <th>Action</th>
+       
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let et of etudiants ">
+        <td><a [routerLink]="[et.id]" >{{et.matricule}} </a> </td>
+       
+        <td>{{et.nom}}</td>
+        <td>{{et.prenom}}</td>
+        <td>{{et.date_naissance}}</td>
+       
+        
+        <td><button class="btn btn-danger"><span class="fa fa-trash" (click)="supprimer(et.id)"></span></button>
+      <button class="btn btn-warning"><span class="fa fa-edit" (click)="modifier(et.id)"></span></button></td>
+    </tr>
+    </tbody>
+    </table>
+    </form>
+</div>
+</div>

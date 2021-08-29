@@ -1,14 +1,144 @@
+
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>ExamenAngular</title>
-  <base href="/">
+   
+    <meta charset="utf-8">
+    <title>App</title>
+    <base href="/">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- Fontfaces CSS-->
+   <link href="assets/css/font-face.css" rel="stylesheet" media="all">
+   <link href="assets/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+   <link href="assets/vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+   <link href="assets/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+   <!-- Bootstrap CSS-->
+   <link href="assets/vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+
+   <!-- Vendor CSS-->
+   <link href="assets/vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+   <link href="assets/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+   <link href="assets/vendor/wow/animate.css" rel="stylesheet" media="all">
+   <link href="assets/vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+   <link href="assets/vendor/slick/slick.css" rel="stylesheet" media="all">
+   <link href="assets/vendor/select2/select2.min.css" rel="stylesheet" media="all">
+   <link href="assets/vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+   <link href="assets/vendor/vector-map/jqvmap.min.css" rel="stylesheet" media="all">
+
+   <!-- Main CSS-->
+   <link href="assets/css/theme.css" rel="stylesheet" media="all">
+
+
 </head>
-<body>
-  <app-root></app-root>
+
+<body >
+   
+
+<aside class="menu-sidebar2">
+    <div class="logo">
+        <a href="#">
+            <img src="assets/images/icon/epilogo.png" alt="Cool Admin" />
+        </a>
+    </div>
+    <div class="menu-sidebar2__content js-scrollbar1">
+        <div class="account2">
+            <div class="image img-cir img-120">
+              
+            </div>
+            
+        </div>
+        <nav class="navbar-sidebar2">
+            <ul class="list-unstyled navbar__list">
+                <li>
+                    <a href="home">
+                        <i class="fas fa-chart-bar"></i>Home</a>
+                 
+                </li>
+                <li class="active has-sub">
+                    <a class="js-arrow" href="#">
+                        <i class="fas fa-tachometer-alt"></i>Gestion Etudiants
+                        <span class="arrow">
+                            <i class="fas fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <ul class="list-unstyled navbar__sub-list js-sub-list">
+                        <li>
+                            <a href="addetudiant">
+                                <i class="fas fa-tachometer-alt"></i>Ajouter Etudiant</a>
+                        </li>
+                        <li>
+                            <a href="listetudiant">
+                                <i class="fas fa-tachometer-alt"></i>Liste des Etudiants</a>
+                        </li>
+                      
+                    </ul>
+                </li>
+                <li class="active has-sub">
+                    <a class="js-arrow" href="#">
+                        <i class="fas fa-tachometer-alt"></i>Gestion Groupe
+                        <span class="arrow">
+                            <i class="fas fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <ul class="list-unstyled navbar__sub-list js-sub-list">
+                        <li>
+                            <a href="addgroupe">
+                                <i class="fas fa-tachometer-alt"></i>Ajouter Groupe</a>
+                        </li>
+                        <li>
+                            <a href="listgroupe">
+                                <i class="fas fa-tachometer-alt"></i>Liste des Groupes</a>
+                        </li>
+                      
+                    </ul>
+                     
+                </li>
+               
+               
+           
+           
+            
+            </ul>
+        </nav>
+    </div>
+    
+</aside>
+
+
+    <!-- Jquery JS-->
+    <script src="assets/vendor/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="assets/vendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <!-- Vendor JS       -->
+    <script src="assets/vendor/slick/slick.min.js">
+    </script>
+    <script src="assets/vendor/wow/wow.min.js"></script>
+    <script src="assets/vendor/animsition/animsition.min.js"></script>
+    <script src="assets/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+    </script>
+    <script src="assets/vendor/counter-up/jquery.waypoints.min.js"></script>
+    <script src="assets/vendor/counter-up/jquery.counterup.min.js">
+    </script>
+    <script src="assets/vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="assets/vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="assets/vendor/chartjs/Chart.bundle.min.js"></script>
+    <script src="assets/vendor/select2/select2.min.js">
+    </script>
+    <script src="assets/vendor/vector-map/jquery.vmap.js"></script>
+    <script src="assets/vendor/vector-map/jquery.vmap.min.js"></script>
+    <script src="assets/vendor/vector-map/jquery.vmap.sampledata.js"></script>
+    <script src="assets/vendor/vector-map/jquery.vmap.world.js"></script>
+
+    <!-- Main JS-->
+    <script src="assets/js/main.js"></script>
+ 
+    <app-root></app-root>
 </body>
+
+<!-- end document-->
+
+ 
 </html>

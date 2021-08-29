@@ -1,0 +1,14 @@
+.li{
+    list-style: square inside
+}
+.id{
+    font-family: verdana;
+    font-size: 15px;
+    padding-left: 10px;
+    color: blue;
+}
+.show{
+    border: 2px blue solid;
+    padding :15px;
+    
+}

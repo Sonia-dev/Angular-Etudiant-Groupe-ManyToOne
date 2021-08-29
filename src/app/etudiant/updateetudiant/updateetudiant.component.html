@@ -1,0 +1,44 @@
+<app-acceuil></app-acceuil>
+
+<div class="card car">
+    <h3>Modifier Etudiant </h3>
+<form (ngSubmit)="update()" #f=ngForm> 
+    <div class="form-group"> 
+      <label for="matricule">Matricule:</label> 
+      <input name="matricule" type="text"  class="form-control"  [(ngModel)]="etudiant.matricule"  >
+ </div>
+     
+<div class="form-group"> 
+    <label for="nom">Nom:</label> 
+    <input name="nom" type="text" id="nom" class="form-control"  [(ngModel)]="etudiant.nom"  >
+</div>
+   
+<div class="form-group"> 
+    <label for="prenom">prenom:</label> 
+    <input name="prenom" type="text" id="prenom" class="form-control"  [(ngModel)]="etudiant.prenom"  >
+</div>
+<div class="form-group"> 
+    <label for="date_naissance">date de naissance:</label> 
+    <input name="date_naissance" type="date" id="date_naissance" class="form-control"  [(ngModel)]="etudiant.date_naissance"  >
+</div>
+
+
+<div class="form-group">
+    <label for="exampleInputEmail1">Groupe</label>
+
+    <select class="form-control" (change)="onSelectFile($event)"  name="etudiant.groupes.nom">   
+      
+      <option > ----select groupe---- </option>
+      <option *ngFor="let gr of grps" value="{{ gr.id }}"  name="groupes.nom">
+        {{ gr.nom }}
+      </option>
+    </select>
+  </div>
+
+
+                      <button class="btn btn-warning" >Update</button> 
+          </form>
+  </div>
+
+
+  

@@ -1,0 +1,19 @@
+<app-acceuil></app-acceuil>
+<h3>Groupe  || {{groupe.nom}}</h3>
+<div class="show">
+
+    
+    <div>
+<label><b class="id">id  :  </b></label>{{groupe.id}}
+    </div>
+    
+            <div>
+                <ul class="li" ><b class="id">liste des etudiants  : </b></ul><li *ngFor="let emp of groupe.etudiants">{{emp.nom}}</li>
+                    </div>
+            
+
+
+
+</div>
+
+<button (click)="back()"> <i class="fas fa-angle-double-left"></i> Retour </button>

@@ -1,0 +1,38 @@
+
+<app-acceuil></app-acceuil>
+<div class="panel-header panel-header-sm">
+    <form>
+       
+        <h2 class="titre">Liste des groupes </h2>
+        
+        
+        
+        
+        <table class="table ">
+        <thead> 
+        <tr>
+        
+            <th> id</th>
+            <th> Nom</th>
+            <th>Action</th>
+           
+           
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let et of groupes ">
+            <td><a [routerLink]="[et.id]" >{{et.id}} </a> </td>
+           
+            <td>{{et.nom}}</td>
+            <td><button class="btn btn-danger"><span class="fa fa-trash" (click)="supprimer(et.id)"></span></button>
+                <button class="btn btn-warning"><span class="fa fa-edit" (click)="modifier(et.id)"></span></button></td>
+         
+           
+           
+                       
+        </tr>
+        </tbody>
+        </table>
+        </form>
+    </div>
+        
